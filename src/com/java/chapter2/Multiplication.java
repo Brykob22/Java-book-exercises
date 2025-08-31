@@ -4,10 +4,9 @@ package com.java.chapter2;
 // Calculate the product of three integers.
 import java.util.Scanner; // the program uses Scanner
 
-public class Product
-{
-    public static void main(String args[])
-    {
+public class Multiplication {
+	
+    public static void main(String args[]) {
         // create Scanner object to obtain input from the command window
         Scanner input = new Scanner(System.in);
         int x; // first number entered by user

@@ -3,11 +3,10 @@
 
 package com.java.chapter2;
 
-public class Welcome3 
-{
+public class Welcome3 {
 	// the main method begins execution of the Java application
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
+    	
         System.out.println("Welcome\nto\nJava\nprogramming!");
         
      // Fig. 2.5: Some common escape sequences 

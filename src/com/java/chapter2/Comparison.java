@@ -5,11 +5,10 @@ package com.java.chapter2;
 //and equality operators.
 import java.util.Scanner; // the program uses the Scanner class
 
-public class Comparison 
-{
+public class Comparison {
     // the main method begins execution of the Java application
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
+    	
         // create Scanner object to obtain input from the command window
         Scanner input = new Scanner(System.in);
 

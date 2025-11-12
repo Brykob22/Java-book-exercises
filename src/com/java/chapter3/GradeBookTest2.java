@@ -1,8 +1,9 @@
-package com.java.chapter3;
-
 // Fig. 3.5: GradeBookTest2.java
 // Create a GradeBook2 object and pass a String object
 // to its displayMessage method.
+
+package com.java.chapter3;
+
 import java.util.Scanner; // program uses Scanner class
 
 public class GradeBookTest2 {

@@ -1,7 +1,8 @@
-package com.java.chapter3;
-
 // Fig. 3.8: GradeBookTest3.java
 // Create and manipulate a GradeBook3 object.
+
+package com.java.chapter3;
+
 import java.util.Scanner; // program uses Scanner class
 
 public class GradeBookTest3 {

@@ -1,8 +1,8 @@
-package com.java.chapter3;
-
 // Fig. 3.1: Gradebook.java
-// Class declaration with one method  
+// Class declaration with one method 
 
+package com.java.chapter3;
+ 
 public class GradeBook {
 	
 	// display a welcome message to the GradeBook user 

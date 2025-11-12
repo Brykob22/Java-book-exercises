@@ -1,7 +1,7 @@
-package com.java.chapter3;
-
 // Fig. 3.10: GradeBook4.java
 // GradeBook4 class with a constructor to initialize the course name.
+
+package com.java.chapter3;
 
 public class GradeBook4 {
 	

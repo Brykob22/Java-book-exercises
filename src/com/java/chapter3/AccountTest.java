@@ -1,7 +1,8 @@
-package com.java.chapter3;
-
 // Fig. 3.14: AccountTest.java
 // Input and output of floating point numbers with Account objects.
+
+package com.java.chapter3;
+
 import java.util.Scanner;
 
 public class AccountTest {

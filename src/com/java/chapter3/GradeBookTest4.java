@@ -1,8 +1,8 @@
-package com.java.chapter3;
-
 // Fig. 3.11: GradeBookTest4.java
 // GradeBook4 constructor is used to specify the
 // course name each time each GradeBook4 object is created.
+
+package com.java.chapter3;
 
 public class GradeBookTest4 {
 	

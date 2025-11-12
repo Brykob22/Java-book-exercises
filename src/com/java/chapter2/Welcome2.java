@@ -4,6 +4,7 @@
 package com.java.chapter2;
 
 public class Welcome2 {
+	
 	 // the main method begins execution of the Java application
     public static void main(String args[]) {
        

@@ -1,7 +1,7 @@
-package com.java.chapter3;
-
 // Fig. 3.4. GradeBook2.java
 // Class declaration with a method that has a parameter 
+
+package com.java.chapter3;
 
 public class GradeBook2 {
 	

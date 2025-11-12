@@ -1,11 +1,13 @@
-package com.java.chapter2;
-
 //Fig. 2.15: Comparison.java
 //Compare integers using if statements, relational operators
 //and equality operators.
+
+package com.java.chapter2;
+
 import java.util.Scanner; // the program uses the Scanner class
 
 public class Comparison {
+	
     // the main method begins execution of the Java application
     public static void main(String args[]) {
     	

@@ -1,7 +1,7 @@
-package com.java.chapter3;
-
 // Fig. 3.2: GradeBookTest.java
 // Create a GradeBook object and call its displayMessage method
+
+package com.java.chapter3;
 
 public class GradeBookTest {
 	

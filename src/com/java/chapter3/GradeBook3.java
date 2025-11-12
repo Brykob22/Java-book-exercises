@@ -1,8 +1,8 @@
-package com.java.chapter3;
-
 // Fig. 3.7: GradeBook3.java
 // GradeBook3 class that contains an instance variable courseName
 // and methods to set and get its value.
+
+package com.java.chapter3;
 
 public class GradeBook3 {
 	

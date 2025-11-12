@@ -1,12 +1,14 @@
-package com.java.chapter2;
-
 // Example 2.6: Product.java
 // Calculate the product of three integers.
+
+package com.java.chapter2;
+
 import java.util.Scanner; // the program uses Scanner
 
 public class Multiplication {
 	
     public static void main(String args[]) {
+    	
         // create Scanner object to obtain input from the command window
         Scanner input = new Scanner(System.in);
         int x; // first number entered by user

@@ -1,10 +1,12 @@
-package com.java.chapter2;
-
 //Fig. 2.7: Sum.java
 //Program that displays the sum of two integers.
+
+package com.java.chapter2;
+
 import java.util.Scanner; // the program uses the Scanner class
 
 public class Addition  {
+	
     // the main method begins execution of the Java application
     public static void main(String args[]) {
     	

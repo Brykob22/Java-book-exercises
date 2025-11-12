@@ -1,7 +1,8 @@
-package com.java.chapter3;
-
 // Fig. 3.18: DialogName.java
 // Basic input with a dialog box.
+
+package com.java.chapter3;
+
 import javax.swing.JOptionPane;
 
 public class DialogName {

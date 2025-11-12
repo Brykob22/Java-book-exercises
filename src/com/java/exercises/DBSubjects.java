@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
 
-public class Subjects {
+public class DBSubjects {
 	
 	public static void main (String [] args) {
 		

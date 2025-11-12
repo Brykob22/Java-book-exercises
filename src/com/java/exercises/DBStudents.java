@@ -8,7 +8,7 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
-public class Students  {
+public class DBStudents  {
 	
 	public static void main (String [] args) {
 		

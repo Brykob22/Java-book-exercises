@@ -13,20 +13,8 @@ public class DBSubjects {
 	
 	public static void main (String [] args) {
 		
-		//Driver info 
-		String driverName = "com.mysql.cj.jdbc.Driver";
-		String urlDriver = "jdbc:mysql://";
-						
-		String serverIp = "165.22.44.145";
-		String serverPort = "3306";
 		
-		//Database info 
-		String databaseUsername = "tlaxitadmin";
-		String databasePassword = "Tl@xAdm!nIT3nt3rpris3";
-		
-		String databaseName = "danny_test";
-		
-		String finalUrl = urlDriver + serverIp + ":" + serverPort + "/" + databaseName;
+		String finalUrl = Constants.urlDriver + Constants.serverIp + ":" + Constants.serverPort + "/" + Constants.databaseName;
 		
 		System.out.println(finalUrl);
 		
@@ -37,8 +25,8 @@ public class DBSubjects {
 		
 		try {
 			
-			Class.forName(driverName);
-		    Connection conn = DriverManager.getConnection(finalUrl, databaseUsername, databasePassword);
+			Class.forName(Constants.driverName);
+		    Connection conn = DriverManager.getConnection(finalUrl, Constants.databaseUsername, Constants.databasePassword);
 		    System.out.println(conn);
 		    System.out.println("Database connected\n");
 		    
@@ -47,7 +35,8 @@ public class DBSubjects {
 		    
 		    while(rs.next()) {
 		    	
-		    	String tableName = rs.getString("Tables_in_" + databaseName);
+		    	String tableName = rs.getString("Tables_in_" + Constants.databaseName);
+		    	
 		    	
 		    	if (tableName.equalsIgnoreCase("subjects")) {
 		    		

@@ -1,6 +1,7 @@
 package com.java.calculator;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Subtraction {
 
@@ -13,36 +14,34 @@ public class Subtraction {
 
 	public static void subNumber(Scanner scanner) {
 
-		System.out.println("You can enter up to 5 numbers. (Enter 0 to finish to adding)");
-
 		Subtraction sub = new Subtraction();
-
-		System.out.print("First number:\t");
-		sub.s1 = Util.validateNumber(scanner);
+		
+		String n1 = JOptionPane.showInputDialog("You can enter up to 5 numbers. (Enter 0 to finish to adding)\n First number:\n");
+		sub.s1 = Integer.parseInt(n1);
 
 		if (sub.s1 != 0) {
-			System.out.print("Second number:\t");
-			sub.s2 = Util.validateNumber(scanner);
+		String n2 = JOptionPane.showInputDialog("Second number:\t");
+			sub.s2 = Integer.parseInt(n2);
 		}
 
 		if (sub.s2 != 0) {
-			System.out.print("Third number:\t");
-			sub.s3 = Util.validateNumber(scanner);
+		String n3 = JOptionPane.showInputDialog("Third number:\t");
+			sub.s3 = Integer.parseInt(n3);
 		}
 
 		if (sub.s3 != 0) {
-			System.out.print("Fourth number:\t");
-			sub.s4 = Util.validateNumber(scanner);
+		String n4 = JOptionPane.showInputDialog("Fourth number:\t");
+			sub.s4 = Integer.parseInt(n4); 
 		}
 
 		if (sub.s4 != 0) {
-			System.out.print("Fifth number:\t");
-			sub.s5 = Util.validateNumber(scanner);
+		String n5 = JOptionPane.showInputDialog("Fifth number:\t");
+			sub.s5 = Integer.parseInt(n5);
 		}
 
 		sub.result = sub.s1 - sub.s2 - sub.s3 - sub.s4 - sub.s5;
-
-		System.out.println("This is result: " + sub.result);
+		
+		JOptionPane.showMessageDialog(null, sub.result);
 
 	}
 	

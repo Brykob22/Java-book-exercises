@@ -9,9 +9,9 @@ public class TestUiText {
 		System.out.println("Valor de option");
 		System.out.println(option);
 
-		// Addition 0
-		// Subtraction 1
-		// Division 3
-		// Multiplication 2
+		// Addition 3
+		// Subtraction 2
+		// Division 1
+		// Multiplication 0
 	}
 }

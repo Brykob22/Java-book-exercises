@@ -12,47 +12,40 @@ public class Addition {
 	public int a4;
 	public int a5;
 	public int result;
-	
+
 	public static void sumNumbers(Scanner scanner) {
-		
-		//System.out.println("You can enter up to 5 numbers. (Enter 0 to finish to adding)");
 
-		//UiText.getMessage();
-		
 		Addition sum = new Addition();
+		
 
-		//System.out.print("First number:\t");
-		
-		String n1 = JOptionPane.showInputDialog("First number");
-		
-		sum.a1 = Integer.parseInt(n1);//Util.validateNumber(n1);
+		String n1 = JOptionPane.showInputDialog("You can enter up to 5 numbers. (Enter 0 to finish to adding)\n First number:\n");
+
+		sum.a1 = Integer.parseInt(n1);
 
 		if (sum.a1 != 0) {
-			System.out.print("Second number:\t");
-			sum.a2 = Util.validateNumber(scanner);
+			String n2 = JOptionPane.showInputDialog("Second number:\t");
+			sum.a2 = Integer.parseInt(n2);
 		}
 
 		if (sum.a2 != 0) {
-			System.out.print("Third number:\t");
-			sum.a3 = Util.validateNumber(scanner);
+			String n3 = JOptionPane.showInputDialog("Third number:\t");
+			sum.a3 = Integer.parseInt(n3);
 		}
 
 		if (sum.a3 != 0) {
-			System.out.print("Fourth number:\t");
-			sum.a4 = Util.validateNumber(scanner);
+			String n4 = JOptionPane.showInputDialog("Fourth number:\t");
+			sum.a4 = Integer.parseInt(n4);
 		}
 
 		if (sum.a4 != 0) {
-			System.out.print("Fifth number:\t");
-			sum.a5 = Util.validateNumber(scanner);
+			String n5 = JOptionPane.showInputDialog("Fifth number:\t");
+			sum.a5 = Integer.parseInt(n5);
 		}
 
 		sum.result = sum.a1 + sum.a2 + sum.a3 + sum.a4 + sum.a5;
 
-		System.out.println("This is result: " + sum.result);
-	
+		JOptionPane.showMessageDialog(null, sum.result);
+
 	}
-	
-	
-	
+
 }

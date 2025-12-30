@@ -9,25 +9,20 @@ public class Operation {
 		Scanner scanner = new Scanner(System.in);
 
 		int option = UiText.getOption();
-		
-		System.out.println("Valor de option");
-		System.out.println(option);
-		
-		//int option = scanner.nextInt();
 
-		if (option == 0) {
+		if (option == 3) {
 			Addition.sumNumbers(scanner);
 		}
 
-		if (option == 1) {
+		if (option == 2) {
 			Subtraction.subNumber(scanner);
 		}
 
-		if (option == 2) {
+		if (option == 1) {
 			Multiplication.mulNumber(scanner);
 		}
 
-		if (option == 3) {
+		if (option == 0) {
 			Division.divNumber(scanner);
 		}
 

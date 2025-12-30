@@ -2,6 +2,8 @@ package com.java.calculator;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Division {
 
 	public int d1 = 1 ;
@@ -13,36 +15,34 @@ public class Division {
 
 	public static void divNumber(Scanner scanner) {
 
-		System.out.println("You can enter up to 5 numbers. (Enter 1 to finish to adding)");
-
 		Division div = new Division();
-
-		System.out.print("First number:\t");
-		div.d1 = Util.validateNumber(scanner);
+		
+		String n1 = JOptionPane.showInputDialog("You can enter up to 5 numbers. (Enter 1 to finish to adding)");
+		div.d1 = Integer.parseInt(n1);
 
 		if (div.d1 != 1) {
-			System.out.print("Second number:\t");
-			div.d2 = Util.validateNumber(scanner);
+		String n2 = JOptionPane.showInputDialog("Second number:\t");
+			div.d2 = Integer.parseInt(n2);
 		}
 
 		if (div.d2 != 1) {
-			System.out.print("Third number:\t");
-			div.d3 = Util.validateNumber(scanner);
+		String n3 = JOptionPane.showInputDialog("Third number:\t");
+			div.d3 = Integer.parseInt(n3);
 		}
 
 		if (div.d3 != 1) {
-			System.out.print("Fourth number:\t");
-			div.d4 = Util.validateNumber(scanner);
+		String n4 = JOptionPane.showInputDialog("Fourth number:\t");
+			div.d4 = Integer.parseInt(n4);
 		}
 
 		if (div.d4 != 1) {
-			System.out.print("Fifth number:\t");
-			div.d5 = Util.validateNumber(scanner);
+		String n5 = JOptionPane.showInputDialog("Fifth number:\t");
+			div.d5 = Integer.parseInt(n5);
 		}
 
 		div.result = div.d1 / div.d2 / div.d3 / div.d4 / div.d5;
-
-		System.out.println("This is result: " + div.result);
+		
+		JOptionPane.showMessageDialog(null, div.result);
 
 	}
 

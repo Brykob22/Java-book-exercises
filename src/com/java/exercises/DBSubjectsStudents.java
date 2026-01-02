@@ -1,32 +1,23 @@
 package com.java.exercises;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class DBSubjectsStudents {
 	
-	public static void main (String [] args) {
-		
-		
-		String finalUrl = Constants.urlDriver + Constants.serverIp + ":" + Constants.serverPort + "/" + Constants.databaseName;
-		
-		System.out.println(finalUrl);
-		
+	public static void subjectsStudents(Scanner scanner){
+
 		//SQL Commands - prompts - sentences - query 
 		String showTables = "SHOW TABLES;";
 		
 		StringBuilder data2 = new StringBuilder();
 		
 		try {
-			
-			Class.forName(Constants.driverName);
-		    Connection conn = DriverManager.getConnection(finalUrl, Constants.databaseUsername, Constants.databasePassword);
-		    System.out.println(conn);
-		    System.out.println("Database connected\n");
+			Connection conn = DBConnection.getConnection();
 		    
 		    Statement st = conn.createStatement();
 		    ResultSet rs = st.executeQuery(showTables);
@@ -34,7 +25,6 @@ public class DBSubjectsStudents {
 		    while(rs.next()) {
 		    	
 		    	String tableName = rs.getString("Tables_in_" + Constants.databaseName);
-		    	
 		    	
 		    	if (tableName.equalsIgnoreCase("subjects_students")) {
 		    		
@@ -71,7 +61,7 @@ public class DBSubjectsStudents {
 		    
 		    rs.close();
 		    st.close();
-		    conn.close();
+		    DBConnection.closeConnection(conn);
 		    
 		    JOptionPane.showMessageDialog(null, 
 			        data2.toString(), 
@@ -87,10 +77,6 @@ public class DBSubjectsStudents {
 					"Error",
 					JOptionPane.ERROR_MESSAGE);	
 		} 
-		
-		catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
 		
 	}
 

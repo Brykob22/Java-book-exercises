@@ -1,22 +1,17 @@
 package com.java.exercises;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
+import java.util.Scanner;
 
 
 public class DBSubjects {
 	
-	public static void main (String [] args) {
-		
-		
-		String finalUrl = Constants.urlDriver + Constants.serverIp + ":" + Constants.serverPort + "/" + Constants.databaseName;
-		
-		System.out.println(finalUrl);
+	public static void subjects(Scanner scanner){
 		
 		//SQL Commands - prompts - sentences - query 
 		String showTables = "SHOW TABLES;";
@@ -24,11 +19,7 @@ public class DBSubjects {
 		StringBuilder data1 = new StringBuilder();
 		
 		try {
-			
-			Class.forName(Constants.driverName);
-		    Connection conn = DriverManager.getConnection(finalUrl, Constants.databaseUsername, Constants.databasePassword);
-		    System.out.println(conn);
-		    System.out.println("Database connected\n");
+			Connection conn = DBConnection.getConnection();
 		    
 		    Statement st = conn.createStatement();
 		    ResultSet rs = st.executeQuery(showTables);
@@ -75,7 +66,7 @@ public class DBSubjects {
 		    
 		    rs.close();
 		    st.close();
-		    conn.close();
+		    DBConnection.closeConnection(conn);
 		    
 		    UIManager.put("OptionPane.messageFont", new java.awt.Font("Monospaced", java.awt.Font.PLAIN, 12));
 		    
@@ -93,10 +84,6 @@ public class DBSubjects {
 					"Error",
 					JOptionPane.ERROR_MESSAGE);	
 		} 
-		
-		catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
 		
 	}
 

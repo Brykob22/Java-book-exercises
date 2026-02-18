@@ -5,11 +5,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-import java.util.Scanner;
 
 public class DBSubjectsStudents {
 	
-	public static void subjectsStudents(Scanner scanner){
+	public static void subjectsStudents(){
 
 		//SQL Commands - prompts - sentences - query 
 		String showTables = "SHOW TABLES;";

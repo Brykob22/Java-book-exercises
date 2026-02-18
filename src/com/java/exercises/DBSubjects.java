@@ -6,12 +6,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
-import java.util.Scanner;
 
 
 public class DBSubjects {
 	
-	public static void subjects(Scanner scanner){
+	public static void subjects(){
 		
 		//SQL Commands - prompts - sentences - query 
 		String showTables = "SHOW TABLES;";
